@@ -133,10 +133,6 @@ release_year > year(curdate()) - 10;
 
 -- 14. Find the top 10 actors who have appeared in the highest number of movies produced in india.
 -- (doubt)
-select * from netflix
-where cast like "%Anupam kher%"
-
-
 
 select SUBSTRING_INDEX(cast, ',') AS actors,
 count(*) as Total_content
